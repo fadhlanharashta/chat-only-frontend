@@ -1,0 +1,88 @@
+body {
+    background-image: linear-gradient(
+      45deg,
+      hsl(0, 66%, 41%) 0%,
+      hsl(323, 84%, 47%) 2%,
+      hsl(325, 83%, 44%) 12%,
+      hsl(288, 91%, 41%) 50%,
+      hsl(260, 90%, 47%) 88%,
+      hsl(208, 79%, 38%) 98%,
+      hsl(202, 90%, 37%) 100%
+    );
+    height: 100vh;
+}
+
+.button{
+    border: none;
+    padding: 0.625em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.button:hover{
+    filter: brightness(0.9);
+}
+
+.button:active{
+    transform: scale(0.9)
+}
+
+.person-selector{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 3em auto 1em;
+    max-width: 28.75em;
+}
+
+.person-selector-button {
+    min-width: 100%; 
+    background-color: rgb(47, 40, 107);
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1.1em;
+}
+
+.active-person{
+    background: rgb(66, 219, 206);
+    box-shadow: 0 0 1em 0.1em #00000033;
+}
+
+.chat-container{
+    background-color: rgb(47, 40, 107);
+    font-family: 'Roboto' sans-serif;
+    border-radius: 0.5em;
+    padding: 0.5em 1.25em;
+    margin: auto;
+    max-width: 37.5em;
+    height: 37.5em;
+    box-shadow: 0 0 1.25em 0.5em #00000033;
+}
+
+.chat-header{
+    margin-bottom: 1em;
+    color: aliceblue;
+}
+
+.chat-header h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.chat-messages{
+    height: 23em;
+    overflow-y: scroll;
+}
+
+.chat-messages::-webkit-scrollbar{
+    display: none;
+}
+
+.message{
+    padding: 0.625em;
+    border-radius: 1em;
+    margin-bottom: 0.625em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}

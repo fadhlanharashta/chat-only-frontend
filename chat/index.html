@@ -9,22 +9,28 @@
 <body>
     <div class="person-selector">
         <button class="button person-selector-button active-person" id="me-selector">Me</button>
-        <button class="button person-selector-button active-person" id="Edward-selector">Edward</button>
+        <button class="button person-selector-button" id="Edward-selector">Edward</button>
     </div>
     <div class="chat-container">
         <h2 class="chat-header">Chat is active...</h2>
-    </div>
-    <div class="chat-messages">
-        <div class="message blue-bg">
-            <div class="sender">Me</div>
-            <div class="message-text">Good evening good sir</div>
-            <div class="timestamp">2.30</div>
+        <div class="chat-messages">
+            <div class="message blue-bg">
+                <div class="sender">Me</div>
+                <div class="message-text">Good evening good sir</div>
+                <div class="timestamp">2.30</div>
+            </div>
+            <div class="message gray-bg">
+                <div class="sender">Edward</div>
+                <div class="message-text">Evening lad</div>
+                <div class="timestamp">2.31</div>
+            </div>
+            <form class="chat-input-form">
+                <input type="text" class="chat-input" required placeholder="..."/>
+                <button type="submit" class="button send-button">Send</button>
+            </form>
+            <button class="button" class="clear-button">Delete All</button>
         </div>
-        <div class="message gray-bg">
-            <div class="sender">Edward</div>
-            <div class="message-text">Evening lad</div>
-            <div class="timestamp">2.31</div>
-        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
