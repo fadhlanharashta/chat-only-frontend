@@ -32,32 +32,34 @@ body {
     justify-content: center;
     gap: 1em;
     margin: 3em auto 1em;
-    max-width: 28.75em;
+    max-width: 19.5em;
 }
 
 .person-selector-button {
     min-width: 100%; 
-    background-color: rgb(47, 40, 107);
+    background-color: #3d5365;
     justify-content: center;
     color: aliceblue;
     font-size: 1.1em;
 }
 
 .active-person{
-    background: rgb(66, 219, 206);
+    background: rgb(21, 0, 255);
     box-shadow: 0 0 1em 0.1em #00000033;
 }
 
-.chat-container{
-    background-color: rgb(47, 40, 107);
-    font-family: 'Roboto' sans-serif;
+.chat-container {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
     border-radius: 0.5em;
     padding: 0.5em 1.25em;
     margin: auto;
     max-width: 37.5em;
     height: 37.5em;
     box-shadow: 0 0 1.25em 0.5em #00000033;
+    opacity: 0.65;
 }
+
 
 .chat-header{
     margin-bottom: 1em;
@@ -85,4 +87,24 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
+}
+
+.sender{
+    font-weight: bold;
+    margin-bottom: 0.31em;
+}
+
+.message-text{
+    font-size: 1em;
+    margin-bottom: 0.31em;
+    word-wrap: break-word;
+}
+
+.timestamp{
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.blue-bg{
+    background-color: rgb(11, 9, 40);
 }
