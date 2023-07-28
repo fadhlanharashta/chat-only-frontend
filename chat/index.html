@@ -8,27 +8,31 @@
 </head>
 <body>
     <div class="person-selector">
-        <button class="button person-selector-button active-person" id="me-selector">Me</button>
-        <button class="button person-selector-button" id="Edward-selector">Edward</button>
+        <button class="button person-selector-button active-person" id="Fritz-selector">Fritz</button>
+        <button class="button person-selector-button" id="Alexander-selector">Alexander</button>
     </div>
-    <div class="chat-container">
-        <h2 class="chat-header">Chat is active...</h2>
-        <div class="chat-messages">
-            <div class="message blue-bg">
-                <div class="sender">Me</div>
-                <div class="message-text">Good evening good sir</div>
-                <div class="timestamp">2.30</div>
-            </div>
-            <div class="message gray-bg">
-                <div class="sender">Edward</div>
-                <div class="message-text">Evening lad</div>
-                <div class="timestamp">2.31</div>
+    <!-- Add the background container -->
+    <div class="chat-container-background">
+        <div class="chat-container">
+            <h2 class="chat-header">Chat connected to Alexander</h2>
+            <div class="chat-messages">
+                <div class="message blue-bg">
+                    <div class="sender">Fritz</div>
+                    <div class="message-text">Good evening good sir</div>
+                    <div class="timestamp">2.30</div>
+                </div>
+                <div class="message gray-bg">
+                    <div class="sender">Alexander</div>
+                    <div class="message-text">Evening lad</div>
+                    <div class="timestamp">2.31</div>
+                </div>
+                <!-- More chat messages go here -->
             </div>
             <form class="chat-input-form">
                 <input type="text" class="chat-input" required placeholder="..."/>
                 <button type="submit" class="button send-button">Send</button>
             </form>
-            <button class="button" class="clear-button">Delete All</button>
+            <button class="button clear-button">Delete All</button>
         </div>
     </div>
     <script src="app.js"></script>
